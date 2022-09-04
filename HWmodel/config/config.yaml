@@ -1,0 +1,14 @@
+#利払い回数
+N: 20
+#利払い間隔(年)
+delta_p: 0.5
+#格子間隔(年)
+delta_t: 0.1
+#権利行使日までの期間(年)
+T: 1.0
+#ストライクレート
+S_Rate: 0.1
+#モンテカルロパス数
+N_monte: 10000
+#解法(backward または montecarlo)
+calc_method: "backward"
