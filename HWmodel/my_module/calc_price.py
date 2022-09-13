@@ -61,5 +61,5 @@ def monte_calro(HW_tree,trans_prob_tree,pricing_tree,delta_t,N_monte):
                     current_node=current_node-1
                     
             price+=pricing_tree[j+1][current_node]*np.exp(-HW_tree[j+1][current_node]*delta_t/100)
-        price_list.append(price)
+        price_list.append(max(price,0))
     return np.mean(price_list)
